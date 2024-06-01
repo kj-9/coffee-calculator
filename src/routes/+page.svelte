@@ -37,7 +37,7 @@
 	let hot_water_3 = $derived(Math.floor(hot_warter * (3 / 5)));
 </script>
 
-<div class="container mt-8 ml-10 text-slate-900">
+<div class="container mt-8 pl-2 sm:pl-10 text-slate-900">
 	<h1 class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-5xl">
 		☕ Coffee Calculator
 	</h1>
@@ -61,7 +61,7 @@
 		<ol class="space-y-4 list-decimal list-inside">
 			<li>
 				準備
-				<ol class="ps-5 mt-2 space-y-1 list-decimal list-inside">
+				<ol class="ps-5 mt-2 space-y-1 list-decimal list-inside text-clip">
 					<li>ドリッパーにペーパをセットしし、湯通ししてペーパー全体を湿らせる（お湯は分量外）</li>
 					<li>ドリップを受ける容器に氷をすべていれる</li>
 					<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
