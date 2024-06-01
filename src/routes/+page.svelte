@@ -38,9 +38,7 @@
 </script>
 
 <div class="container mt-8 ml-10 text-slate-900">
-	<h1
-		class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-5xl"
-	>
+	<h1 class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-5xl">
 		☕ Coffee Calculator
 	</h1>
 
