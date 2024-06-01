@@ -58,7 +58,7 @@
 			<li><Tag>{hot_warter} ml</Tag>のお湯</li>
 		</ul>
 
-		<h2 class="mt-10 mb-2 text-lg font-semibold">手順</h2>
+		<h2 class="mt-10 mb-2 text-lg font-semibold">コーヒーを淹れる</h2>
 
 		<ol class="space-y-4 list-decimal list-inside">
 			<li>
