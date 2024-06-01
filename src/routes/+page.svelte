@@ -68,8 +68,8 @@
 			<li>
 				準備
 				<ol class="ps-2 sm:ps-4 mt-2 space-y-3 list-decimal list-inside text-clip">
-					<li>ドリッパーにペーパをセットし、お湯でペーパー全体を湿らせる</li>
-					<li>ドリップを受ける容器に氷をいれる</li>
+					<li>ペーパ-をドリッパーにセットし、お湯で全体を湿らせる</li>
+					<li>ドリップポットに氷をいれる</li>
 					<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
 				</ol>
 			</li>
