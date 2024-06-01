@@ -2,6 +2,7 @@
 	import InputAmount from '$lib/components/InputAmount.svelte';
 	import Timer from '$lib/components/Timer.svelte';
 	import Card from '$lib/components/Card.svelte';
+	import Tag from '$lib/components/Tag.svelte';
 
 	function createCoffee(amount: number) {
 		let _amount = $state(amount);
@@ -50,10 +51,10 @@
 	</div>
 
 	<h2 class="mt-5 mb-2 text-lg font-semibold">材料:</h2>
-	<ul class="ml-2 space-y-1 list-disc list-inside">
-		<li>{coffee_powder} gのコーヒー粉</li>
-		<li>{ice} gの氷</li>
-		<li>{hot_warter} mlのお湯</li>
+	<ul class="ml-2 space-y-2 list-disc list-inside">
+		<li><Tag>{coffee_powder} g</Tag>のコーヒー粉</li>
+		<li><Tag>{ice} g</Tag>の氷</li>
+		<li><Tag>{hot_warter} ml</Tag>のお湯</li>
 	</ul>
 
 	<h2 class="mt-5 mb-2 text-lg font-semibold">手順:</h2>
@@ -69,16 +70,16 @@
 		</li>
 		<li>
 			お湯を注ぐ
-			<ul class="ps-5 mt-2 space-y-1 list-decimal list-inside">
-				<li>お湯{hot_water_1_2}mlを注ぎ、1分蒸らす (真ん中から細くゆっくりと注ぐ)</li>
-				<li>お湯{hot_water_1_2}mlを注ぎ、1分蒸らす</li>
-				<li>残りのお湯{hot_water_3}mlを注ぐ (少し早めに注ぐ)</li>
+			<ul class="ps-5 mt-2 space-y-2 list-decimal list-inside">
+				<li><Tag>{hot_water_1_2} ml</Tag>のお湯を注ぎ、1分蒸らす (真ん中から細くゆっくりと注ぐ)</li>
+				<li><Tag>{hot_water_1_2} ml</Tag>のお湯を注ぎ、1分蒸らす</li>
+				<li><Tag>{hot_water_3} ml</Tag>の残りのお湯を注ぐ (少し早めに注ぐ)</li>
 			</ul>
 		</li>
 	</ol>
 
 	<div class="mt-5" />
-	<Card class="mt-10">
+	<Card>
 		<Timer />
 	</Card>
 

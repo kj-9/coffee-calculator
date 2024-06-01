@@ -33,7 +33,7 @@
 		type="number"
 		id="counter-input"
 		data-input-counter
-		class="flex-shrink-0 border-0 bg-transparent font-normal focus:outline-none focus:ring-0 max-w-[5rem] text-center"
+		class="flex-shrink-0 border-0 bg-transparent text-xl font-normal focus:outline-none focus:ring-0 max-w-[5rem] text-center"
 		placeholder=""
 		bind:value={coffee.amount}
 		onchange={(a) => console.log(a)}
