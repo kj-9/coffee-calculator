@@ -39,7 +39,7 @@
 
 <div class="container mt-8 ml-10 text-slate-900">
 	<h1
-		class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
+		class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-5xl"
 	>
 		☕ Coffee Calculator
 	</h1>
@@ -51,14 +51,14 @@
 	</div>
 
 	<div class="ml-2">
-		<h2 class="mt-10 mb-2 text-lg font-semibold">材料</h2>
+		<h2 class="mt-10 mb-2 text-xl font-semibold">材料</h2>
 		<ul class="ml-2 space-y-2 list-disc list-inside">
 			<li><Tag>{coffee_powder} g</Tag>のコーヒー粉</li>
 			<li><Tag>{ice} g</Tag>の氷</li>
 			<li><Tag>{hot_warter} ml</Tag>のお湯</li>
 		</ul>
 
-		<h2 class="mt-10 mb-2 text-lg font-semibold">コーヒーを淹れる</h2>
+		<h2 class="mt-10 mb-2 text-xl font-semibold">コーヒーを淹れる</h2>
 
 		<ol class="space-y-4 list-decimal list-inside">
 			<li>
