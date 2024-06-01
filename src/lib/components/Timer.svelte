@@ -30,7 +30,7 @@
 <div class="flex items-start justify-center gap-4">
 	<div>
 		<div class="py-2 px-2 overflow-hidden">
-			<h3 class="text-slate-600 text-2xl text-center">⏲️</h3>
+			<h3 class="text-slate-600 text-3xl text-center">⏲️</h3>
 		</div>
 	</div>
 

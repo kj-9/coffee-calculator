@@ -48,14 +48,15 @@
 
 <div class="container mt-8 pl-2 sm:pl-10 text-slate-900">
 	<div class="mt-10">
+		<h2 class="mt-10 mb-2 text-xl font-semibold">何mlのアイスコーヒーを作りますか?</h2>
 		<Card>
-			<InputAmount {coffee} label={'何mlのアイスコーヒーを作りますか?'} />
+			<InputAmount {coffee} />
 		</Card>
 	</div>
 
 	<div class="ml-2">
-		<h2 class="mt-10 mb-2 text-xl font-semibold">材料</h2>
-		<ul class="ml-2 space-y-3 list-disc list-inside">
+		<h2 class="mt-10 mb-2 text-xl font-semibold">材料は...</h2>
+		<ul class="ml-2 space-y-3">
 			<li><Tag>{coffee_powder} g</Tag>のコーヒー粉</li>
 			<li><Tag>{ice} g</Tag>の氷</li>
 			<li><Tag>{hot_warter} ml</Tag>のお湯</li>
@@ -63,7 +64,7 @@
 
 		<h2 class="mt-10 mb-2 text-xl font-semibold">コーヒーを淹れる</h2>
 
-		<ol class="space-y-4 list-decimal list-inside">
+		<ul class="space-y-4">
 			<li>
 				準備
 				<ol class="ps-2 sm:ps-4 mt-2 space-y-3 list-decimal list-inside text-clip">
@@ -82,20 +83,21 @@
 					<li><Tag>{hot_water_3} ml</Tag>の残りのお湯を注ぐ (少し早めに注ぐ)</li>
 				</ul>
 			</li>
-		</ol>
+		</ul>
 
 		<div class="mt-8"></div>
 		<Card>
 			<Timer />
 		</Card>
 
-		<h2 class="mt-10 mb-2 text-lg font-semibold">参考</h2>
-		<ul class="ml-2 space-y-1 list-disc list-inside mb-8">
+		<h2 class="mt-10 mb-2 text-lg font-semibold">Credits</h2>
+		<ul class="ml-2 space-y-1 mb-8">
 			<li>
+				レシピは
 				<a
 					href="https://www.youtube.com/watch?v=2-VGeC0SFMU"
-					class="font-medium text-blue-600 hover:underline">レシピは井崎英典さんの動画より</a
-				>
+					class="font-medium text-blue-600 hover:underline">井崎英典さんの動画</a
+				>より
 			</li>
 		</ul>
 	</div>
