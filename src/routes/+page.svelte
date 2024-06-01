@@ -84,8 +84,8 @@
 			<Timer />
 		</Card>
 
-		<h2 class="mt-10 mb-2 text-lg font-semibold">参考:</h2>
-		<ul class="ml-2 space-y-1 list-disc list-inside">
+		<h2 class="mt-10 mb-2 text-lg font-semibold">参考</h2>
+		<ul class="ml-2 space-y-1 list-disc list-inside mb-8">
 			<li>
 				<a
 					href="https://www.youtube.com/watch?v=2-VGeC0SFMU"
