@@ -1,5 +1,7 @@
 <script lang="ts">
 	import InputAmount from '$lib/components/InputAmount.svelte';
+	import Timer from '$lib/components/Timer.svelte';
+	import Card from '$lib/components/Card.svelte';
 
 	function createCoffee(amount: number) {
 		let _amount = $state(amount);
@@ -42,7 +44,9 @@
 	</h1>
 
 	<div class="mt-10">
-		<InputAmount {coffee} label={'何mlのアイスコーヒーを作りますか?'} />
+		<Card>
+			<InputAmount {coffee} label={'何mlのアイスコーヒーを作りますか?'} />
+		</Card>
 	</div>
 
 	<h2 class="mt-5 mb-2 text-lg font-semibold">材料:</h2>
@@ -72,6 +76,11 @@
 			</ul>
 		</li>
 	</ol>
+
+	<div class="mt-5" />
+	<Card class="mt-10">
+		<Timer />
+	</Card>
 
 	<h2 class="mt-5 mb-2 text-lg font-semibold">参考:</h2>
 	<ul class="ml-2 space-y-1 list-disc list-inside">
