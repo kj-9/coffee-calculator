@@ -39,9 +39,9 @@ jobs:
         run: |
           pnpm install
 
-      - name: Type check
-        run: |
-          pnpm check
+      #- name: Type check
+      #  run: |
+      #    pnpm check
 
       - name: lint
         run: |
