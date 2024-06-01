@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Header from '$lib/components/Header.svelte';
 	import InputAmount from '$lib/components/InputAmount.svelte';
 	import Timer from '$lib/components/Timer.svelte';
 	import Card from '$lib/components/Card.svelte';
@@ -43,11 +44,9 @@
 	let hot_water_3 = $derived(Math.floor(hot_warter * (3 / 5)));
 </script>
 
-<div class="container mt-8 pl-2 sm:pl-10 text-slate-900">
-	<h1 class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 lg:text-5xl">
-		☕ Coffee Calculator
-	</h1>
+<Header />
 
+<div class="container mt-8 pl-2 sm:pl-10 text-slate-900">
 	<div class="mt-10">
 		<Card>
 			<InputAmount {coffee} label={'何mlのアイスコーヒーを作りますか?'} />
@@ -96,12 +95,6 @@
 				<a
 					href="https://www.youtube.com/watch?v=2-VGeC0SFMU"
 					class="font-medium text-blue-600 hover:underline">レシピは井崎英典さんの動画より</a
-				>
-			</li>
-			<li>
-				<a
-					href="https://github.com/kj-9/coffee-calculator"
-					class="font-medium text-blue-600 hover:underline">ソースコード</a
 				>
 			</li>
 		</ul>
