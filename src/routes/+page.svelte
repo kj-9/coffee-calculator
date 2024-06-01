@@ -12,7 +12,13 @@
 		}
 
 		function decrement(value: number) {
-			return () => (_amount -= value);
+			return () => {
+				// 0未満にならないようにする
+				if (_amount - value < 0) {
+					return;
+				}
+				_amount -= value;
+			};
 		}
 
 		return {
