@@ -37,7 +37,7 @@
 	let hot_water_3 = $derived(Math.floor(hot_warter * (3 / 5)));
 </script>
 
-<div class="container mt-2 ml-10 text-slate-900">
+<div class="container mt-8 ml-10 text-slate-900">
 	<h1
 		class="text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl"
 	>
@@ -49,15 +49,16 @@
 			<InputAmount {coffee} label={'何mlのアイスコーヒーを作りますか?'} />
 		</Card>
 	</div>
-
-	<h2 class="mt-5 mb-2 text-lg font-semibold">材料:</h2>
+	
+	<div class="ml-2">
+	<h2 class="mt-10 mb-2 text-lg font-semibold">材料</h2>
 	<ul class="ml-2 space-y-2 list-disc list-inside">
 		<li><Tag>{coffee_powder} g</Tag>のコーヒー粉</li>
 		<li><Tag>{ice} g</Tag>の氷</li>
 		<li><Tag>{hot_warter} ml</Tag>のお湯</li>
 	</ul>
 
-	<h2 class="mt-5 mb-2 text-lg font-semibold">手順:</h2>
+	<h2 class="mt-10 mb-2 text-lg font-semibold">手順</h2>
 
 	<ol class="space-y-4 list-decimal list-inside">
 		<li>
@@ -78,12 +79,12 @@
 		</li>
 	</ol>
 
-	<div class="mt-5" />
+	<div class="mt-8" />
 	<Card>
 		<Timer />
 	</Card>
 
-	<h2 class="mt-5 mb-2 text-lg font-semibold">参考:</h2>
+	<h2 class="mt-10 mb-2 text-lg font-semibold">参考:</h2>
 	<ul class="ml-2 space-y-1 list-disc list-inside">
 		<li>
 			<a
@@ -98,4 +99,5 @@
 			>
 		</li>
 	</ul>
+</div>
 </div>
