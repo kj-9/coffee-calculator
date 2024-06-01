@@ -4,7 +4,7 @@
 	const STEP_VALUE = 50;
 </script>
 
-<div class="relative flex items-center">
+<div class="relative flex items-center justify-center">
 	<button
 		onclick={coffee.decrement(STEP_VALUE)}
 		type="button"
