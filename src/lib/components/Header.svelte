@@ -10,7 +10,7 @@
 			<div class="flex items-center lg:order-2">
 				<a
 					href="https://github.com/kj-9/coffee-calculator"
-					class="bg-slate-300 focus:ring-4 focus:ring-slate-300 rounded-lg"
+					class="bg-white ring-2 ring-white rounded-lg"
 				>
 					<svg class="w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
 						<!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path
