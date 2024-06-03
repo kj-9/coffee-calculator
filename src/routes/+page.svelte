@@ -48,20 +48,29 @@
 
 <div class="container mt-8 pl-2 sm:pl-10 text-brown-900">
 	<div class="mt-10">
-		<h2 class="mt-10 mb-2 text-xl font-semibold">何mlのアイスコーヒーを作りますか?</h2>
 		<Card>
+			<h2>何mlのアイスコーヒーを作りますか?</h2>
 			<InputAmount {coffee} />
+
+			<h2 class="text-sm text-brown-300">材料</h2>
+			<ul class="px-4">
+				<li class="flex justify-between">
+					<div>コーヒー豆/粉</div>
+					<div class="align-right text-xl text-teal-400 font-semibold">{coffee_powder} g</div>
+				</li>
+				<li class="flex justify-between">
+					<div>氷</div>
+					<div class="align-right text-xl text-teal-400 font-semibold">{ice} g</div>
+				</li>
+				<li class="flex justify-between">
+					<div>お湯</div>
+					<div class="align-right text-xl text-teal-400 font-semibold">{hot_warter} ml</div>
+				</li>
+			</ul>
 		</Card>
 	</div>
 
 	<div class="ml-2">
-		<h2 class="mt-10 mb-2 text-xl font-semibold">材料は...</h2>
-		<ul class="ml-2 space-y-3">
-			<li><Tag>{coffee_powder} g</Tag>のコーヒー粉</li>
-			<li><Tag>{ice} g</Tag>の氷</li>
-			<li><Tag>{hot_warter} ml</Tag>のお湯</li>
-		</ul>
-
 		<h2 class="mt-10 mb-2 text-xl font-semibold">コーヒーを淹れる</h2>
 
 		<ul class="space-y-4">
