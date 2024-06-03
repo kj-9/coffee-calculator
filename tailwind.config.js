@@ -2,6 +2,9 @@
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
+		fontFamily: {
+			body: ['"Zen Kaku Gothic New"', 'sans-serif']
+		},
 		extend: {}
 	},
 	plugins: []
