@@ -46,7 +46,7 @@
 
 <Header />
 
-<div class="container mt-8 pl-2 sm:pl-10 text-slate-900">
+<div class="container mt-8 pl-2 sm:pl-10 text-neutral-900">
 	<div class="mt-10">
 		<h2 class="mt-10 mb-2 text-xl font-semibold">何mlのアイスコーヒーを作りますか?</h2>
 		<Card>

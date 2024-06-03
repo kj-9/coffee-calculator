@@ -10,10 +10,10 @@
 		type="button"
 		id="decrement-button"
 		data-input-counter-decrement="counter-input"
-		class="flex-shrink-0 bg-slate-50 hover:bg-slate-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 focus:ring-2 focus:outline-none"
+		class="flex-shrink-0 bg-neutral-50 hover:bg-neutral-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 focus:ring-2 focus:outline-none"
 	>
 		<svg
-			class="w-4 h-4 text-slate-600"
+			class="w-4 h-4 text-neutral-600"
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
@@ -44,10 +44,10 @@
 		type="button"
 		id="increment-button"
 		data-input-counter-increment="counter-input"
-		class="flex-shrink-0 bg-slate-100 hover:bg-slate-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 focus:ring-2 focus:outline-none"
+		class="flex-shrink-0 bg-neutral-100 hover:bg-neutral-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 focus:ring-2 focus:outline-none"
 	>
 		<svg
-			class="w-4 h-4 text-slate-600"
+			class="w-4 h-4 text-neutral-600"
 			aria-hidden="true"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"

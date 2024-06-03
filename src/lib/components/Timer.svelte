@@ -30,12 +30,12 @@
 <div class="flex items-start justify-center gap-4">
 	<div>
 		<div class="py-2 px-2 overflow-hidden">
-			<h3 class="text-slate-600 text-3xl text-center">⏲️</h3>
+			<h3 class="text-neutral-600 text-3xl text-center">⏲️</h3>
 		</div>
 	</div>
 
 	<div class="w-16">
-		<div class="bg-slate-600 py-2 px-2 rounded-lg overflow-hidden">
+		<div class="bg-neutral-600 py-2 px-2 rounded-lg overflow-hidden">
 			<h3 class="font-semibold text-2xl text-white text-center">
 				{minute}
 			</h3>
@@ -44,12 +44,12 @@
 
 	<div>
 		<div class="rounded-lg overflow-hidden">
-			<h3 class="text-slate-600 text-2xl text-center">:</h3>
+			<h3 class="text-neutral-600 text-2xl text-center">:</h3>
 		</div>
 	</div>
 
 	<div class="w-16">
-		<div class=" bg-slate-600 py-2 px-2 rounded-lg overflow-hidden">
+		<div class=" bg-neutral-600 py-2 px-2 rounded-lg overflow-hidden">
 			<h3 class="font-semibold text-2xl text-white text-center">
 				{second}
 			</h3>
@@ -62,8 +62,8 @@
 				onclick={onClick}
 				type="button"
 				class="{isCounting
-					? 'bg-slate-800'
-					: 'bg-slate-600'}  text-white focus:ring-slate-300 hover:bg-slate-800 focus:outline-none focus:ring-4 font-medium rounded-full text-sm px-3 py-2 text-center"
+					? 'bg-neutral-800'
+					: 'bg-neutral-600'}  text-white focus:ring-neutral-300 hover:bg-neutral-800 focus:outline-none focus:ring-4 font-medium rounded-full text-sm px-3 py-2 text-center"
 			>
 				{isCounting ? 'Stop' : 'Start'}
 			</button>
