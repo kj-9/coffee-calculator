@@ -88,10 +88,7 @@
 	</div>
 
 	<div class="mt-2 text-sm text-brown-600">
-		レシピ: 井崎英典さんの<a 
-		class="underline"
-			href="https://www.youtube.com/watch?v=2-VGeC0SFMU"
-		>
+		レシピ: 井崎英典さんの<a class="underline" href="https://www.youtube.com/watch?v=2-VGeC0SFMU">
 			究極のアイスコーヒーの淹れ方</a
 		>より
 	</div>
