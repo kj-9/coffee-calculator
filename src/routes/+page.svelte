@@ -3,7 +3,6 @@
 	import InputAmount from '$lib/components/InputAmount.svelte';
 	import Timer from '$lib/components/Timer.svelte';
 	import Card from '$lib/components/Card.svelte';
-	import Tag from '$lib/components/Tag.svelte';
 
 	function createCoffee(amount: number) {
 		let _amount = $state(amount);
@@ -85,16 +84,6 @@
 					<li>ドリップポットに氷をいれる</li>
 					<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
 				</ol>
-			</li>
-			<li>
-				お湯を注ぐ
-				<ul class="ps-2 sm:ps-4 mt-2 space-y-3 list-decimal list-inside">
-					<li>
-						<Tag>{hot_water_1_2} ml</Tag>のお湯を注ぎ、1分蒸らす (真ん中から細くゆっくりと注ぐ)
-					</li>
-					<li><Tag>{hot_water_1_2} ml</Tag>のお湯を注ぎ、1分蒸らす</li>
-					<li><Tag>{hot_water_3} ml</Tag>の残りのお湯を注ぐ (少し早めに注ぐ)</li>
-				</ul>
 			</li>
 		</ul>
 
