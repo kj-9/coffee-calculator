@@ -66,6 +66,13 @@
 			</li>
 		</ul>
 
+		<h2 class="text-sm text-brown-300 mt-3">準備</h2>
+		<ol class="px-4 list-inside">
+			<li>ペーパーをセットし、お湯で全体を湿らせる</li>
+			<li>ドリップポットに氷をいれる</li>
+			<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
+		</ol>
+
 		<h2 class="text-sm text-brown-300 mt-3">淹れ方</h2>
 		<ol class="px-4 list-inside">
 			<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
@@ -73,34 +80,19 @@
 			<li><span class="text-xl text-sky-400">{hot_water_3} ml</span> 注ぐ</li>
 		</ol>
 	</Card>
-	<div class="ml-2">
-		<h2 class="mt-10 mb-2 text-xl font-semibold">コーヒーを淹れる</h2>
 
-		<ul class="space-y-4">
-			<li>
-				準備
-				<ol class="ps-2 sm:ps-4 mt-2 space-y-3 list-decimal list-inside text-clip">
-					<li>ペーパ-をドリッパーにセットし、お湯で全体を湿らせる</li>
-					<li>ドリップポットに氷をいれる</li>
-					<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
-				</ol>
-			</li>
-		</ul>
-
-		<div class="mt-8"></div>
+	<div class="mt-2">
 		<Card>
 			<Timer />
 		</Card>
+	</div>
 
-		<h2 class="mt-10 mb-2 text-lg font-semibold">Credits</h2>
-		<ul class="ml-2 space-y-1 mb-8">
-			<li>
-				レシピは
-				<a
-					href="https://www.youtube.com/watch?v=2-VGeC0SFMU"
-					class="font-medium text-blue-600 hover:underline">井崎英典さんの動画</a
-				>より
-			</li>
-		</ul>
+	<div class="mt-2 text-sm text-brown-600">
+		レシピ: 井崎英典さんの<a 
+		class="underline"
+			href="https://www.youtube.com/watch?v=2-VGeC0SFMU"
+		>
+			究極のアイスコーヒーの淹れ方</a
+		>より
 	</div>
 </div>
