@@ -46,54 +46,56 @@
 
 <Header />
 
-<div class="container mt-4 pl-2 sm:pl-10">
-	<Card>
-		<h2>何mlのアイスコーヒーを作りますか?</h2>
-		<InputAmount {coffee} />
-
-		<h2 class="text-sm text-brown-300">材料</h2>
-		<ul class="px-4">
-			<li class="flex justify-between">
-				<div>コーヒー豆/粉</div>
-				<div class="align-right text-xl text-sky-400">{coffee_powder} g</div>
-			</li>
-			<li class="flex justify-between">
-				<div>氷</div>
-				<div class="align-right text-xl text-sky-400">{ice} g</div>
-			</li>
-			<li class="flex justify-between">
-				<div>お湯</div>
-				<div class="align-right text-xl text-sky-400">{hot_warter} ml</div>
-			</li>
-		</ul>
-
-		<h2 class="text-sm text-brown-300 mt-3">準備</h2>
-		<ol class="px-4 list-inside">
-			<li>ペーパーをセットし、お湯で全体を湿らせる</li>
-			<li>ドリップポットに氷をいれる</li>
-			<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
-		</ol>
-
-		<h2 class="text-sm text-brown-300 mt-3">淹れ方</h2>
-		<ol class="px-4 list-inside">
-			<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
-			<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
-			<li><span class="text-xl text-sky-400">{hot_water_3} ml</span> 注ぐ</li>
-		</ol>
-	</Card>
-
-	<div class="mt-2">
+<div class="container mt-4 px-1 sm:px-3">
+	<div class="max-w-md">
 		<Card>
-			<Timer />
+			<h2>何mlのアイスコーヒーを作りますか?</h2>
+			<InputAmount {coffee} />
+
+			<h2 class="text-sm text-brown-300">材料</h2>
+			<ul class="px-4">
+				<li class="flex justify-between">
+					<div>コーヒー豆/粉</div>
+					<div class="align-right text-xl text-sky-400">{coffee_powder} g</div>
+				</li>
+				<li class="flex justify-between">
+					<div>氷</div>
+					<div class="align-right text-xl text-sky-400">{ice} g</div>
+				</li>
+				<li class="flex justify-between">
+					<div>お湯</div>
+					<div class="align-right text-xl text-sky-400">{hot_warter} ml</div>
+				</li>
+			</ul>
+
+			<h2 class="text-sm text-brown-300 mt-3">準備</h2>
+			<ol class="px-4 list-inside">
+				<li>ペーパーをセットし、お湯で全体を湿らせる</li>
+				<li>ドリップポットに氷をいれる</li>
+				<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
+			</ol>
+
+			<h2 class="text-sm text-brown-300 mt-3">淹れ方</h2>
+			<ol class="px-4 list-inside">
+				<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
+				<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
+				<li><span class="text-xl text-sky-400">{hot_water_3} ml</span> 注ぐ</li>
+			</ol>
 		</Card>
-	</div>
 
-	<div class="ml-1 mt-2 text-sm text-brown-600">
-		レシピ: 井崎英典さんの<a class="underline" href="https://www.youtube.com/watch?v=2-VGeC0SFMU">
-			究極のアイスコーヒーの淹れ方</a
-		>より
-	</div>
+		<div class="mt-2">
+			<Card>
+				<Timer />
+			</Card>
+		</div>
 
-	<div class="mt-5"></div>
-	<Footer />
+		<div class="ml-1 mt-2 text-sm text-brown-600">
+			レシピ: 井崎英典さんの<a class="underline" href="https://www.youtube.com/watch?v=2-VGeC0SFMU">
+				究極のアイスコーヒーの淹れ方</a
+			>より
+		</div>
+
+		<div class="mt-5"></div>
+		<Footer />
+	</div>
 </div>
