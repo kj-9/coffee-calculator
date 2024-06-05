@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import InputAmount from '$lib/components/InputAmount.svelte';
 	import Timer from '$lib/components/Timer.svelte';
 	import Card from '$lib/components/Card.svelte';
@@ -92,4 +93,7 @@
 			究極のアイスコーヒーの淹れ方</a
 		>より
 	</div>
+
+	<div class="mt-5"></div>
+	<Footer />
 </div>
