@@ -57,23 +57,27 @@
 			<ul class="px-4">
 				<li class="flex justify-between">
 					<div>コーヒー豆/粉</div>
-					<div class="align-right text-xl text-sky-400">{coffee_powder} g</div>
+					<div class="mr-[0.45rem]">
+						<span class="align-right text-xl text-sky-400">{coffee_powder}</span> g
+					</div>
 				</li>
 				<li class="flex justify-between">
 					<div>氷</div>
-					<div class="align-right text-xl text-sky-400">{ice} g</div>
+					<div class="mr-[0.45rem]">
+						<span class="align-right text-xl text-sky-400">{ice}</span> g
+					</div>
 				</li>
 				<li class="flex justify-between">
 					<div>お湯</div>
-					<div class="align-right text-xl text-sky-400">{hot_warter} ml</div>
+					<div><span class="align-right text-xl text-sky-400">{hot_warter}</span> ml</div>
 				</li>
 			</ul>
 
 			<h2 class="text-sm text-brown-300 mt-5">淹れ方</h2>
 			<ol class="px-4 list-inside">
-				<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
-				<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
-				<li><span class="text-xl text-sky-400">{hot_water_3} ml</span> 注ぐ</li>
+				<li><span class="text-xl text-sky-400">{hot_water_1_2}</span> ml 注ぎ、1分蒸らす</li>
+				<li><span class="text-xl text-sky-400">{hot_water_1_2}</span> ml 注ぎ、1分蒸らす</li>
+				<li><span class="text-xl text-sky-400">{hot_water_3}</span> ml 注ぐ</li>
 			</ol>
 
 			<div class="mt-5">
