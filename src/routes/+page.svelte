@@ -68,14 +68,14 @@
 				</li>
 			</ul>
 
-			<h2 class="text-sm text-brown-300 mt-3">準備</h2>
+			<h2 class="text-sm text-brown-300 mt-5">準備</h2>
 			<ol class="px-4 list-inside">
 				<li>ペーパーをセットし、お湯で全体を湿らせる</li>
 				<li>ドリップポットに氷をいれる</li>
 				<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
 			</ol>
 
-			<h2 class="text-sm text-brown-300 mt-3">淹れ方</h2>
+			<h2 class="text-sm text-brown-300 mt-5">淹れ方</h2>
 			<ol class="px-4 list-inside">
 				<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
 				<li><span class="text-xl text-sky-400">{hot_water_1_2} ml</span> 注ぎ、1分蒸らす</li>
