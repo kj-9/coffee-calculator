@@ -35,7 +35,6 @@
 		class="bg-transparent text-6xl font-semibold max-w-[8rem] text-center"
 		placeholder=""
 		bind:value={coffee.amount}
-		onchange={(a) => console.log(a)}
 		required
 	/>
 	<span class="mr-2 text-xl">ml</span>

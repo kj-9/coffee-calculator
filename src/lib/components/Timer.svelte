@@ -18,10 +18,8 @@
 
 	const onClick = () => {
 		if (isCounting) {
-			console.log('stop');
 			stop();
 		} else {
-			console.log('start');
 			start();
 		}
 	};
