@@ -30,15 +30,15 @@
 	</button>
 	<div>
 		<input
-		type="number"
-		id="counter-input"
-		data-input-counter
-		class="bg-transparent  text-6xl font-semibold max-w-[8rem] text-right"
-		placeholder=""
-		bind:value={coffee.amount}
-		required
-	/>
-	<span class="mr-4 text-xl">ml</span>
+			type="number"
+			id="counter-input"
+			data-input-counter
+			class="bg-transparent text-6xl font-semibold max-w-[8rem] text-right"
+			placeholder=""
+			bind:value={coffee.amount}
+			required
+		/>
+		<span class="mr-4 text-xl">ml</span>
 	</div>
 	<button
 		onclick={coffee.increment(STEP_VALUE)}
