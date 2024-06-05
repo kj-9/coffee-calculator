@@ -4,7 +4,7 @@
 	const STEP_VALUE = 50;
 </script>
 
-<div class="relative flex items-center justify-center">
+<div class="flex items-center justify-center">
 	<button
 		onclick={coffee.decrement(STEP_VALUE)}
 		type="button"
@@ -28,16 +28,18 @@
 			/>
 		</svg>
 	</button>
-	<input
+	<div>
+		<input
 		type="number"
 		id="counter-input"
 		data-input-counter
-		class="bg-transparent text-6xl font-semibold max-w-[8rem] text-center"
+		class="bg-transparent  text-6xl font-semibold max-w-[8rem] text-right"
 		placeholder=""
 		bind:value={coffee.amount}
 		required
 	/>
-	<span class="mr-2 text-xl">ml</span>
+	<span class="mr-4 text-xl">ml</span>
+	</div>
 	<button
 		onclick={coffee.increment(STEP_VALUE)}
 		type="button"
