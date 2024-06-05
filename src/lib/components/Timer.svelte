@@ -33,15 +33,15 @@
 			onclick={onClick}
 			type="button"
 			class="{isCounting
-				? 'bg-brown-900'
-				: 'bg-brown-600'}  text-white focus:ring-brown-300 hover:bg-brown-900 focus:outline-none focus:ring-4 font-medium rounded-full text-sm px-3 py-2 text-center"
+				? 'bg-brown-900 border-white'
+				: 'bg-brown-100 text-brown-900 '} font-medium border rounded-full text-sm px-2 py-2 text-center"
 		>
 			{isCounting ? 'Stop' : 'Start'}
 		</button>
 	</div>
 	<div class="w-16">
-		<div class="bg-brown-600 py-2 px-2 rounded-lg">
-			<h3 class="font-semibold text-2xl text-white text-center">
+		<div class="bg-brown-100 py-2 px-2 rounded-lg">
+			<h3 class="font-semibold text-2xl text-brown-900 text-center">
 				{minute}
 			</h3>
 		</div>
@@ -54,8 +54,8 @@
 	</div>
 
 	<div class="w-16">
-		<div class=" bg-brown-600 py-2 px-2 rounded-lg">
-			<h3 class="font-semibold text-2xl text-white text-center">
+		<div class=" bg-brown-100 py-2 px-2 rounded-lg">
+			<h3 class="font-semibold text-2xl text-brown-900 text-center">
 				{second}
 			</h3>
 		</div>
