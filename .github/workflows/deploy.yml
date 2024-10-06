@@ -52,6 +52,8 @@ jobs:
           pnpm install
 
       - name: build
+        env:
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           pnpm build
       - name: Setup Pages
