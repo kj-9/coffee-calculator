@@ -1,5 +1,7 @@
 <script>
+	/** @type {{children?: import('svelte').Snippet}} */
+	let { children } = $props();
 	import '../app.css';
 </script>
 
-<slot />
+{@render children?.()}
