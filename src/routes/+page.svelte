@@ -46,8 +46,9 @@
 	const coffee = createCoffee(250);
 
 	let coffee_powder = $derived(Math.floor(coffee.amount * 0.08));
-	let hot_warter = $derived(Math.floor(coffee.amount * (3 / 5)));
-	let ice = $derived(Math.floor(coffee.amount * (2 / 5)));
+	let ice_ratio = $derived(coffee.isHotCoffee ? 0 : 0.4);
+	let hot_warter = $derived(Math.floor(coffee.amount * (1 - ice_ratio)));
+	let ice = $derived(Math.floor(coffee.amount * ice_ratio));
 
 	let hot_water_1_2 = $derived(Math.floor(hot_warter * (1 / 5)));
 	let hot_water_3 = $derived(Math.floor(hot_warter * (3 / 5)));
@@ -58,16 +59,14 @@
 <div class="container mt-4 px-1 sm:px-3">
 	<div class="max-w-md">
 		<Card>
-			<h2>何mlの{coffee.isHotCoffee ? 'ホット' : 'アイス'}コーヒーを作りますか?</h2>
-			<InputAmount {coffee} />
-
 			<button
-				onclick={coffee.toggleCoffeeMode}
-				class="mt-4 bg-brown-100 text-brown-900 font-medium border rounded-full text-sm px-4 py-2 text-center"
-			>
-				{coffee.isHotCoffee ? 'アイスコーヒーに切り替え' : 'ホットコーヒーに切り替え'}
-			</button>
-
+			onclick={coffee.toggleCoffeeMode}
+			class="mb-2 bg-brown-100 text-brown-900 font-medium border rounded-full text-sm px-4 py-2 text-center"
+		>
+			{coffee.isHotCoffee ? 'ホット' : 'アイス'}
+		</button>
+			<h2>何mlのコーヒーを作りますか?</h2>
+			<InputAmount {coffee} />
 			<h2 class="text-sm text-brown-300">材料</h2>
 			<ul class="px-4">
 				<li class="flex justify-between">
