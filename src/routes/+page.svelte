@@ -115,10 +115,21 @@
 			</Card>
 		</div>
 
-		<div class="ml-1 mt-2 text-sm text-brown-600">
-			レシピ: 井崎英典さんの<a class="underline" href="https://www.youtube.com/watch?v=2-VGeC0SFMU">
-				究極のアイスコーヒーの淹れ方</a
-			>より
+		<div class="ml-1 mt-2 text-xs text-brown-600">
+			井崎英典さんのレシピを参考にしています:
+			<ul class="list-disc list-inside">
+				<li>
+					<a class="underline" href="https://www.youtube.com/watch?v=2-VGeC0SFMU">
+						究極のアイスコーヒーの淹れ方
+					</a>
+				</li>
+				<li>
+					<a class="underline" href="https://www.youtube.com/watch?v=o3eMg4DYLKo">
+						世界一美味しいコーヒーの淹れ方
+						〜ワールド・バリスタ・チャンピオン井崎英典が教える６つのポイント〜
+					</a>
+				</li>
+			</ul>
 		</div>
 
 		<div class="mt-5"></div>
