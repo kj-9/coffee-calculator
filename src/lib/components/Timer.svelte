@@ -7,8 +7,7 @@
 	let isCounting = $state(false);
 
 	let stop = $state(() => {});
-
-	let wakeLock = null;
+	let wakeLock = $state(null);
 
 	async function requestWakeLock() {
 		try {
