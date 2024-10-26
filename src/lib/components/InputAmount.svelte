@@ -11,6 +11,7 @@
 		id="decrement-button"
 		data-input-counter-decrement="counter-input"
 		class="flex-shrink-0 bg-brown-50 hover:bg-brown-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 focus:ring-2 focus:outline-none"
+		aria-labelledby="decrement-button"
 	>
 		<svg
 			class="w-4 h-4 text-brown-600"
@@ -46,6 +47,7 @@
 		id="increment-button"
 		data-input-counter-increment="counter-input"
 		class="flex-shrink-0 bg-brown-100 hover:bg-brown-200 inline-flex items-center justify-center border border-gray-300 rounded-md h-5 w-5 focus:ring-gray-100 focus:ring-2 focus:outline-none"
+		aria-labelledby="increment-button"
 	>
 		<svg
 			class="w-4 h-4 text-brown-600"
