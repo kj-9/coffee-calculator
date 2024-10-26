@@ -8,13 +8,37 @@
 
 	let stop = $state(() => {});
 
+	let wakeLock = null;
+
+	async function requestWakeLock() {
+		try {
+			wakeLock = await navigator.wakeLock.request('screen');
+		} catch (err) {
+			console.error(`${err.name}, ${err.message}`);
+		}
+	}
+
+	async function releaseWakeLock() {
+		try {
+			if (wakeLock !== null) {
+				await wakeLock.release();
+				wakeLock = null;
+			}
+		} catch (err) {
+			console.error(`${err.name}, ${err.message}`);
+		}
+	}
+
 	function start() {
 		const interval = setInterval(() => (time += 1), 1000);
 		isCounting = true;
 
+		requestWakeLock();
+
 		stop = () => {
 			clearInterval(interval);
 			isCounting = false;
+			releaseWakeLock();
 		};
 	}
 
