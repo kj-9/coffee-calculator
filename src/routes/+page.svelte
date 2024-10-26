@@ -60,11 +60,13 @@
 	<div class="max-w-md">
 		<Card>
 			<button
-			onclick={coffee.toggleCoffeeMode}
-			class="mb-2 bg-brown-100 text-brown-900 font-medium border rounded-full text-sm px-4 py-2 text-center"
-		>
-			{coffee.isHotCoffee ? 'ホット' : 'アイス'}
-		</button>
+				onclick={coffee.toggleCoffeeMode}
+				class="mb-2 font-medium border rounded-full text-sm px-4 py-2 text-center {coffee.isHotCoffee
+					? 'bg-brown-900 text-brown-100'
+					: 'bg-brown-100 text-brown-900'}"
+			>
+				{coffee.isHotCoffee ? 'ホット' : 'アイス'}
+			</button>
 			<h2>何mlのコーヒーを作りますか?</h2>
 			<InputAmount {coffee} />
 			<h2 class="text-sm text-brown-300">材料</h2>
