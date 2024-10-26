@@ -1,5 +1,6 @@
 <script>
 	let { coffee = {} } = $props();
+	let { isHotCoffee = false } = $props();
 
 	const STEP_VALUE = 50;
 </script>
