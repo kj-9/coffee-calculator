@@ -6,8 +6,9 @@
 	import Card from '$lib/components/Card.svelte';
 	import Accordion from '$lib/components/Accordion.svelte';
 
-	function createCoffee(amount: number) {
+	function createCoffee(amount: number, isHotCoffee = false) {
 		let _amount = $state(amount);
+		let _isHotCoffee = $state(isHotCoffee);
 
 		function increment(value: number) {
 			return () => (_amount += value);
@@ -31,7 +32,14 @@
 				_amount = value;
 			},
 			increment,
-			decrement
+			decrement,
+
+			get isHotCoffee() {
+				return _isHotCoffee;
+			},
+			toggleCoffeeMode() {
+				_isHotCoffee = !_isHotCoffee;
+			}
 		};
 	}
 
@@ -43,12 +51,6 @@
 
 	let hot_water_1_2 = $derived(Math.floor(hot_warter * (1 / 5)));
 	let hot_water_3 = $derived(Math.floor(hot_warter * (3 / 5)));
-
-	let isHotCoffee = $state(false);
-
-	function toggleCoffeeMode() {
-		isHotCoffee = !isHotCoffee;
-	}
 </script>
 
 <Header />
@@ -56,11 +58,14 @@
 <div class="container mt-4 px-1 sm:px-3">
 	<div class="max-w-md">
 		<Card>
-			<h2>何mlの{isHotCoffee ? 'ホット' : 'アイス'}コーヒーを作りますか?</h2>
+			<h2>何mlの{coffee.isHotCoffee ? 'ホット' : 'アイス'}コーヒーを作りますか?</h2>
 			<InputAmount {coffee} />
 
-			<button on:click={toggleCoffeeMode} class="mt-4 bg-brown-100 text-brown-900 font-medium border rounded-full text-sm px-4 py-2 text-center">
-				{isHotCoffee ? 'アイスコーヒーに切り替え' : 'ホットコーヒーに切り替え'}
+			<button
+				onclick={coffee.toggleCoffeeMode}
+				class="mt-4 bg-brown-100 text-brown-900 font-medium border rounded-full text-sm px-4 py-2 text-center"
+			>
+				{coffee.isHotCoffee ? 'アイスコーヒーに切り替え' : 'ホットコーヒーに切り替え'}
 			</button>
 
 			<h2 class="text-sm text-brown-300">材料</h2>
@@ -71,14 +76,14 @@
 						<span class="align-right text-xl text-sky-400">{coffee_powder}</span> g
 					</div>
 				</li>
-					{#if !isHotCoffee}
-				<li class="flex justify-between">
-					<div>氷</div>
-					<div class="mr-[0.45rem]">
-						<span class="align-right text-xl text-sky-400">{ice}</span> g
-					</div>
-				</li>
-					{/if}
+				{#if !coffee.isHotCoffee}
+					<li class="flex justify-between">
+						<div>氷</div>
+						<div class="mr-[0.45rem]">
+							<span class="align-right text-xl text-sky-400">{ice}</span> g
+						</div>
+					</li>
+				{/if}
 				<li class="flex justify-between">
 					<div>お湯</div>
 					<div><span class="align-right text-xl text-sky-400">{hot_warter}</span> ml</div>
@@ -96,7 +101,7 @@
 				<Accordion title="準備">
 					<ol class="px-4 list-inside">
 						<li>ペーパーをセットし、お湯で全体を湿らせる</li>
-						<li>ドリップポットに氷をいれる</li>
+						{#if !coffee.isHotCoffee}<li>ドリップポットに氷をいれる</li>{/if}
 						<li>ドリッパーにコーヒー粉を入れ、軽くならす</li>
 					</ol>
 				</Accordion>
