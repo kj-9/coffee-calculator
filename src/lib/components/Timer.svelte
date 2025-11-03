@@ -1,22 +1,22 @@
 <script>
 	let time = $state(0);
 
-	// @ts-ignore - parameter type inferred at runtime
+	// @ts-expect-error - parameter type inferred at runtime
 	const pad = (num) => num.toString().padStart(2, '0');
 	let second = $derived(pad(time % 60));
 	let minute = $derived(pad(Math.floor(time / 60)));
 	let isCounting = $state(false);
 
 	let stop = $state(() => {});
-	// @ts-ignore - wake lock availability differs across browsers
+	// @ts-expect-error - wake lock availability differs across browsers
 	let wakeLock = $state(null);
 
 	async function requestWakeLock() {
 		try {
-			// @ts-ignore - wake lock API may not exist
+			// @ts-expect-error - wake lock API may not exist
 			wakeLock = await navigator.wakeLock.request('screen');
 		} catch (err) {
-			// @ts-ignore - logging uses error fields when available
+			// @ts-expect-error - logging uses error fields when available
 			console.error(`${err.name}, ${err.message}`);
 		}
 	}
@@ -24,12 +24,12 @@
 	async function releaseWakeLock() {
 		try {
 			if (wakeLock !== null) {
-				// @ts-ignore - wake lock API may not exist
+				// @ts-expect-error - wake lock API may not exist
 				await wakeLock.release();
 				wakeLock = null;
 			}
 		} catch (err) {
-			// @ts-ignore - logging uses error fields when available
+			// @ts-expect-error - logging uses error fields when available
 			console.error(`${err.name}, ${err.message}`);
 		}
 	}
