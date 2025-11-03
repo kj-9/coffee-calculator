@@ -1,38 +1,56 @@
-# create-svelte
+# Coffee Calculator
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+香り高いコーヒーを手早く淹れるためのレシピ計算機です。抽出量を指定すると、ホット／アイスに応じた豆量・湯量・氷量を算出し、ステップごとの注湯ガイドとドリップ用タイマーを提供します。SvelteKit 5（Runes API）と Tailwind CSS を用いたシングルページアプリケーションです。
 
-## Creating a project
+## 主な機能
 
-If you're seeing this, you've probably already done this step. Congrats!
+- コーヒー抽出量に応じた豆・お湯・氷の自動計算
+- 季節に応じたデフォルト抽出モード（ホット／アイス）の切り替え
+- 抽出ステップの注湯目安とタイマー（Wake Lock 対応）
+- カードレイアウトによるモバイルフレンドリーな UI
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## プロジェクト構成
 
-# create a new project in my-app
-npm create svelte@latest my-app
+```
+src/
+  routes/         UI のページコンポーネント（トップページは `+page.svelte`）
+  lib/components/ Header・Timer など再利用コンポーネント
+  app.css         Tailwind のエントリスタイル
+static/           favicon や静的アセット
 ```
 
-## Developing
+## セットアップ
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+依存パッケージは pnpm を想定しています。
 
 ```bash
-npm run build
+pnpm install
+pnpm dev          # 開発サーバー（http://localhost:5173）
 ```
 
-You can preview the production build with `npm run preview`.
+## 開発フロー
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- `pnpm dev`: ホットリロード付き開発サーバーを起動
+- `pnpm build`: 本番用にバンドルを生成
+- `pnpm preview`: build した成果物をローカルで確認
+- `pnpm check`: SvelteKit 同期と型検査（`svelte-check`）
+- `pnpm lint`: Prettier チェックと ESLint 実行
+- `pnpm format`: Prettier による自動整形
+
+## コーディングガイド
+
+- 言語: Svelte + TypeScript、Svelte Runes（`$state` 等）を優先利用
+- スタイル: Tailwind CSS（`tailwind.config.js`）でユーティリティクラスを適用
+- 整形: Prettier（`.prettierrc` は package.json 依存）、ESLint で lint
+- コンポーネントは `src/lib/components` に配置し、`src/lib/index.ts` 経由で再エクスポート
+
+## テストと品質
+
+現在自動テストは未整備です。ロジック追加時は以下を推奨します。
+
+- 計算ロジックを純粋関数として切り出し、Vitest 等で単体テストを追加
+- 状態管理（Runes）の副作用を最小化し、コンポーネントを小さく保つ
+
+## デプロイ
+
+Vite の静的ビルド（`pnpm build`）で生成した出力を任意のホスティングに配置できます。必要に応じて SvelteKit の adapter-static を使用し、GitHub Pages や Netlify へのデプロイを行ってください。
