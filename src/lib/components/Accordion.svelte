@@ -2,7 +2,10 @@
 	import { slide } from 'svelte/transition';
 	let isOpen = $state(false);
 
-	const { title, children } = $props();
+        const { title, children } = /** @type {{
+                title: string;
+                children: import('svelte').Snippet;
+        }} */ ($props());
 </script>
 
 <div id="accordion-collapse" data-accordion="collapse">

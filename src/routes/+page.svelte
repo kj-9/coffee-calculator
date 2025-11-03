@@ -43,7 +43,15 @@
 		};
 	}
 
-	const coffee = createCoffee(250);
+        const HOT_DEFAULT_MONTHS = new Set([9, 10, 11, 12, 1, 2, 3, 4]);
+
+        function getDefaultIsHotCoffee(date = new Date()) {
+                const month = date.getMonth() + 1;
+
+                return HOT_DEFAULT_MONTHS.has(month);
+        }
+
+        const coffee = createCoffee(250, getDefaultIsHotCoffee());
 
 	let coffee_powder = $derived(Math.floor(coffee.amount * 0.08));
 	let ice_ratio = $derived(coffee.isHotCoffee ? 0 : 0.4);
