@@ -1,5 +1,15 @@
 <script>
-	let { coffee = {} } = $props();
+	/**
+	 * @typedef {{
+	 *      amount: number;
+	 *      increment: (value: number) => () => void;
+	 *      decrement: (value: number) => () => void;
+	 * }} CoffeeControls
+	 */
+
+	const { coffee = /** @type {CoffeeControls} */ ({}) } = /** @type {{
+                coffee?: CoffeeControls;
+        }} */ ($props());
 
 	const STEP_VALUE = 50;
 </script>
@@ -78,6 +88,7 @@
 
 	/* Firefox */
 	input[type='number'] {
+		appearance: textfield;
 		-moz-appearance: textfield;
 	}
 </style>
