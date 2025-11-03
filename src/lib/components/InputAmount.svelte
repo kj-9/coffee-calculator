@@ -1,13 +1,13 @@
 <script>
-        /**
-         * @typedef {{
-         *      amount: number;
-         *      increment: (value: number) => () => void;
-         *      decrement: (value: number) => () => void;
-         * }} CoffeeControls
-         */
+	/**
+	 * @typedef {{
+	 *      amount: number;
+	 *      increment: (value: number) => () => void;
+	 *      decrement: (value: number) => () => void;
+	 * }} CoffeeControls
+	 */
 
-        const { coffee = /** @type {CoffeeControls} */ ({}) } = /** @type {{
+	const { coffee = /** @type {CoffeeControls} */ ({}) } = /** @type {{
                 coffee?: CoffeeControls;
         }} */ ($props());
 
@@ -87,8 +87,8 @@
 	}
 
 	/* Firefox */
-        input[type='number'] {
-                appearance: textfield;
-                -moz-appearance: textfield;
-        }
+	input[type='number'] {
+		appearance: textfield;
+		-moz-appearance: textfield;
+	}
 </style>
